@@ -5,8 +5,8 @@
 package bip44
 
 import (
-	"github.com/FactomProject/go-bip32"
-	"github.com/FactomProject/go-bip39"
+	"./go-bip32"
+	"./go-bip39"
 )
 
 const Purpose uint32 = 0x8000002C

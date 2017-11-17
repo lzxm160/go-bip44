@@ -2,11 +2,8 @@ package bip44_test
 
 import (
 	"testing"
-
-	//"github.com/FactomProject/factom"
-	"github.com/FactomProject/go-bip32"
-	"github.com/FactomProject/go-bip39"
-	. "github.com/FactomProject/go-bip44"
+	"./go-bip32"
+	"./go-bip39"
 )
 
 func TestNewKeyFromMnemonic(t *testing.T) {

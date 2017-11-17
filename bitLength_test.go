@@ -2,8 +2,6 @@ package bip44_test
 
 import (
 	"testing"
-
-	. "github.com/FactomProject/go-bip44"
 )
 
 func TestBitLength(t *testing.T) {
