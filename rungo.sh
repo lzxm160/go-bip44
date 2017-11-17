@@ -6,4 +6,4 @@ export GOBIN=/root/gopath/bin
 #go build -o hdwallet ./
 #./hdwallet
 # go run gowallet.go -n 3 -v BTC
-go run gowallet.go -n 3 
+go run gowallet.go
