@@ -2,11 +2,11 @@
 // Use of this source code is governed by the MIT
 // license that can be found in the LICENSE file.
 
-package bip44
+package main
 
 import (
-	"./go-bip32"
-	"./go-bip39"
+	bip32"./go-bip32"
+	bip39"./go-bip39"
 )
 
 const Purpose uint32 = 0x8000002C
