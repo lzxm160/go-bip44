@@ -13,7 +13,7 @@ func main() {
 }
 func testNewKeyFromMnemonic() {
 	mnemonic := "bronze runway jelly initial world glare hero divert spray cargo imitate merry"
-	fKey, err := NewKeyFromMnemonic(mnemonic, TypeFactomFactoids, bip32.FirstHardenedChild, 0, 0)
+	fKey, err := NewKeyFromMnemonic(mnemonic, TypeBitcoin, bip32.FirstHardenedChild, 0, 0)
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -21,7 +21,7 @@ func testNewKeyFromMnemonic() {
 	// 	fmt.Printf("Invalid Factoid key - %v", fKey.String())
 	// }
 	fmt.Println(fKey.String())
-	ecKey, err := NewKeyFromMnemonic(mnemonic, TypeFactomEntryCredits, bip32.FirstHardenedChild, 0, 0)
+	ecKey, err := NewKeyFromMnemonic(mnemonic, TypeBitcoin, bip32.FirstHardenedChild, 0, 0)
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -44,7 +44,7 @@ func testNewKeyFromMasterKey() {
 		fmt.Println(err)
 	}
 	fmt.Println(masterKey)
-	fKey, err := NewKeyFromMasterKey(masterKey, TypeFactomFactoids, bip32.FirstHardenedChild, 0, 0)
+	fKey, err := NewKeyFromMasterKey(masterKey, TypeBitcoin, bip32.FirstHardenedChild, 0, 0)
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -52,7 +52,7 @@ func testNewKeyFromMasterKey() {
 	// 	fmt.Printf("Invalid Factoid key - %v", fKey.String())
 	// }
 	fmt.Println(fKey.String())
-	ecKey, err := NewKeyFromMasterKey(masterKey, TypeFactomEntryCredits, bip32.FirstHardenedChild, 0, 0)
+	ecKey, err := NewKeyFromMasterKey(masterKey, TypeBitcoin, bip32.FirstHardenedChild, 0, 0)
 	if err != nil {
 		fmt.Println(err)
 	}
