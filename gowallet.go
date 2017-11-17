@@ -12,7 +12,7 @@ func main() {
 	testNewKeyFromMasterKey()
 }
 func testNewKeyFromMnemonic() {
-	mnemonic := "cannon ranch answer cherry chunk market muscle mesh rail rice wheel wrong"
+	mnemonic := "bronze runway jelly initial world glare hero divert spray cargo imitate merry"
 	fKey, err := NewKeyFromMnemonic(mnemonic, TypeFactomFactoids, bip32.FirstHardenedChild, 0, 0)
 	if err != nil {
 		fmt.Println(err)
@@ -32,7 +32,7 @@ func testNewKeyFromMnemonic() {
 }
 
 func testNewKeyFromMasterKey() {
-	mnemonic := "cannon ranch answer cherry chunk market muscle mesh rail rice wheel wrong"
+	mnemonic := "bronze runway jelly initial world glare hero divert spray cargo imitate merry"
 
 	seed, err := bip39.NewSeedWithErrorChecking(mnemonic, "")
 	if err != nil {
