@@ -1,4 +1,4 @@
-package bip44_test
+package main
 
 import (
 	"testing"
