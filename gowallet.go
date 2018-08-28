@@ -17,18 +17,12 @@ func testNewKeyFromMnemonic() {
 	if err != nil {
 		fmt.Println(err)
 	}
-	// if fKey.String() != "xprvA2vH8KdcBBKhMxhENJpJdbwiU5cUXSkaHR7QVTpBmusgYMR8NsZ4BFTNyRLUiaPHg7UYP8u92FJkSEAmmgu3PDQCoY7gBsdvpB7msWGCpXG" {
-	// 	fmt.Printf("Invalid Factoid key - %v", fKey.String())
-	// }
 	fmt.Println(fKey.String())
-	ecKey, err := NewKeyFromMnemonic(mnemonic, TypeBitcoin, bip32.FirstHardenedChild, 0, 0)
+	add, err := factom.MakeFactoidAddress(fKey.Key)
 	if err != nil {
-		fmt.Println(err)
+		panic(err)
 	}
-	// if ecKey.String() != "xprvA2ziNegvZRfAAUtDsjeS9LvCP1TFXfR3hUzMcJw7oYAhdPqZyiJTMf1ByyLRxvQmGvgbPcG6Q569m26ixWsmgTR3d3PwicrG7hGD7C7seJA" {
-	// 	fmt.Printf("Invalid EC key - %v", ecKey.String())
-	// }
-	fmt.Println(ecKey.String())
+	t.Logf("%v", add.String())
 }
 
 func testNewKeyFromMasterKey() {
